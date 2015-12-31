@@ -6,7 +6,10 @@ package business.directory.domain.core;
 public interface Coordinate {
 
     CoordinateType type();
-    void setValue(String value);
+
+    void setValue(String value) throws IllegalArgumentException;
+
     String getValue();
-    boolean validate();
+
+    boolean validate(String value);
 }
