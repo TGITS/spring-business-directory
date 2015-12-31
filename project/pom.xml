@@ -1,47 +1,55 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>douai.learning.geek</groupId>
-  <artifactId>spring-business-directory</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <groupId>douai.learning.geek</groupId>
+    <artifactId>spring-business-directory</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-  <name>Spring Business Directory</name>
-  <url>https://github.com/TGITS/spring-business-directory</url>
+    <name>Spring Business Directory</name>
+    <url>https://github.com/TGITS/spring-business-directory</url>
 
-  <properties>
-		<project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
-		<maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
-		<global.build.time>${maven.build.timestamp}</global.build.time>
-		<global.version>1.0.0-SNAPSHOT</global.version>
-		<java.version>1.8</java.version>
-	</properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
+        <global.build.time>${maven.build.timestamp}</global.build.time>
+        <global.version>1.0.0-SNAPSHOT</global.version>
+        <java.version>1.8</java.version>
+    </properties>
 
-  <developers>
-    <developer>
-      <id>charlesdangleux</id>
-      <name>Charles Dangleterre</name>
-      <email>charlesdangleterre@gmail.com</email>
-      <properties>
-        <active>true</active>
-      </properties>
-    </developer>
-    <developer>
-      <id>TGITS</id>
-      <name>Christophe Vaudry</name>
-      <email>christophe.vaudry@gmail.com</email>
-      <properties>
-        <active>true</active>
-      </properties>
-    </developer>
-  </developers>
+    <developers>
+        <developer>
+            <id>charlesdangleux</id>
+            <name>Charles Dangleterre</name>
+            <email>charlesdangleterre@gmail.com</email>
+            <properties>
+                <active>true</active>
+            </properties>
+        </developer>
+        <developer>
+            <id>TGITS</id>
+            <name>Christophe Vaudry</name>
+            <email>christophe.vaudry@gmail.com</email>
+            <properties>
+                <active>true</active>
+            </properties>
+        </developer>
+    </developers>
 
-  <modules>
-    <module>spring-business-directory-infrastructure</module>
-    <module>spring-business-directory-domain</module>
-    <module>spring-business-directory-application</module>
-    <module>spring-business-directory-webui</module>
-  </modules>
+    <modules>
+        <module>spring-business-directory-infrastructure</module>
+        <module>spring-business-directory-domain</module>
+        <module>spring-business-directory-application</module>
+        <module>spring-business-directory-webui</module>
+    </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.6</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 </project>
