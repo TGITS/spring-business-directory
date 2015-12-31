@@ -6,8 +6,8 @@ import lombok.ToString;
 /**
  * Created by TGITS on 31/12/2015.
  */
-@EqualsAndHashCode
-@ToString
+@EqualsAndHashCode(callSuper = true)
+@ToString(callSuper = true)
 public class EmailCoordinate extends AbstractCoordinate {
 
     private final String pattern = "\\w+@\\w+\\.\\w+";

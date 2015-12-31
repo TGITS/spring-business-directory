@@ -1,8 +1,13 @@
 package business.directory.domain.core;
 
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
 /**
  * Created by TGITS on 31/12/2015.
  */
+@EqualsAndHashCode(callSuper = true)
+@ToString(callSuper = true)
 public class PostalCoordinate extends AbstractCoordinate {
 
     //valid characters : alphanumeric, spaces, -, ','

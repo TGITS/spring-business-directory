@@ -7,9 +7,9 @@ public interface Coordinate {
 
     CoordinateType type();
 
-    void setValue(String value) throws IllegalArgumentException;
-
     String getValue();
+
+    void setValue(String value) throws IllegalArgumentException;
 
     boolean validate(String value);
 }

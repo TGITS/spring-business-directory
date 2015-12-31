@@ -8,8 +8,8 @@ import lombok.ToString;
 /**
  * @author TGITS
  */
-@EqualsAndHashCode
-@ToString
+@EqualsAndHashCode(callSuper = true)
+@ToString(callSuper = true)
 public class PhoneCoordinate extends AbstractCoordinate {
 
     private final String pattern = "\\+\\d{11}|0\\d{9}";
@@ -18,7 +18,7 @@ public class PhoneCoordinate extends AbstractCoordinate {
         super();
     }
 
-    public PhoneCoordinate(String phoneNumber){
+    public PhoneCoordinate(String phoneNumber) {
         super(phoneNumber);
     }
 

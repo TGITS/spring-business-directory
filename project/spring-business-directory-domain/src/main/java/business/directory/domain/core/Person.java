@@ -2,15 +2,12 @@
  */
 package business.directory.domain.core;
 
-import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
 import lombok.ToString;
 
-import java.util.*;
+import java.util.EnumMap;
 
 /**
- *
  * @author TGITS
  */
 
@@ -19,7 +16,7 @@ import java.util.*;
 public class Person {
     private String name;
     private String forname;
-    private EnumMap<CoordinateType,Coordinate> coordinateByType;
+    private EnumMap<CoordinateType, Coordinate> coordinateByType;
 
     public Person(String name, String forname) {
         this.name = name;
@@ -28,9 +25,9 @@ public class Person {
 
     public void addCoordinate(Coordinate coordinate) {
         if (coordinateByType == null) {
-            this.coordinateByType = new EnumMap<CoordinateType,Coordinate>(CoordinateType.class);
+            this.coordinateByType = new EnumMap<CoordinateType, Coordinate>(CoordinateType.class);
         }
-        coordinateByType.put(coordinate.type(),coordinate);
+        coordinateByType.put(coordinate.type(), coordinate);
     }
 
     public Coordinate fetchCoordinate(CoordinateType type) {
@@ -40,7 +37,7 @@ public class Person {
         return null;
     }
 
-    public int getNumberOfCoordinates(){
+    public int getNumberOfCoordinates() {
         if (coordinateByType != null) {
             return this.coordinateByType.size();
         }
