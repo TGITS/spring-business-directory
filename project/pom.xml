@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -8,7 +8,77 @@
     <packaging>pom</packaging>
 
     <name>Spring Business Directory</name>
+    <description>
+        An educational project which aim is to practice Java/JEE(TM), Spring (TM) and other java-related technologies.
+    </description>
     <url>https://github.com/TGITS/spring-business-directory</url>
+    <inceptionYear>2015</inceptionYear>
+    <!-- <licenses></licenses> -->
+    <developers>
+        <developer>
+            <id>charlesdangleux</id>
+            <name>Charles Dangleterre</name>
+            <email>charlesdangleterre@gmail.com</email>
+            <url>https://github.com/CharlesDangleux/spring-business-directory</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>France/Lille</timezone>
+            <properties>
+                <active>true</active>
+            </properties>
+        </developer>
+        <developer>
+            <id>MrLuss</id>
+            <name>Frédéric Reitz</name>
+            <email>frederic.reitz@gmail.com</email>
+            <url>https://github.com/TGITS/spring-business-directory</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>France/Lille</timezone>
+            <properties>
+                <active>true</active>
+            </properties>
+        </developer>
+        <developer>
+            <id>TGITS</id>
+            <name>Christophe Vaudry</name>
+            <email>christophe.vaudry@gmail.com</email>
+            <url>https://github.com/TGITS/spring-business-directory</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>France/Lille</timezone>
+            <properties>
+                <active>true</active>
+            </properties>
+        </developer>
+    </developers>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.6</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <modules>
+        <module>spring-business-directory-infrastructure</module>
+        <module>spring-business-directory-domain</module>
+        <module>spring-business-directory-application</module>
+        <module>spring-business-directory-webui</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,38 +88,4 @@
         <java.version>1.8</java.version>
     </properties>
 
-    <developers>
-        <developer>
-            <id>charlesdangleux</id>
-            <name>Charles Dangleterre</name>
-            <email>charlesdangleterre@gmail.com</email>
-            <properties>
-                <active>true</active>
-            </properties>
-        </developer>
-        <developer>
-            <id>TGITS</id>
-            <name>Christophe Vaudry</name>
-            <email>christophe.vaudry@gmail.com</email>
-            <properties>
-                <active>true</active>
-            </properties>
-        </developer>
-    </developers>
-
-    <modules>
-        <module>spring-business-directory-infrastructure</module>
-        <module>spring-business-directory-domain</module>
-        <module>spring-business-directory-application</module>
-        <module>spring-business-directory-webui</module>
-    </modules>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.6</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
 </project>
