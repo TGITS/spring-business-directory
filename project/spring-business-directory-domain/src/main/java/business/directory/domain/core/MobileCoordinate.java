@@ -20,7 +20,7 @@ public class MobileCoordinate extends AbstractCoordinate {
     }
 
     public CoordinateType type() {
-        return CoordinateType.PHONE;
+        return CoordinateType.MOBILE;
     }
 
     protected String pattern() {
