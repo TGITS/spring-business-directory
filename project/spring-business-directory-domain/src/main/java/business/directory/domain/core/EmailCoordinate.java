@@ -12,6 +12,13 @@ public class EmailCoordinate extends AbstractCoordinate {
 
     private final String pattern = "\\w+@\\w+\\.\\w+";
 
+    public EmailCoordinate() {
+    }
+
+    public EmailCoordinate(String email) {
+        super(email);
+    }
+
     public CoordinateType type() {
         return CoordinateType.EMAIL;
     }

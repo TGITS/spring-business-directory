@@ -1,25 +1,22 @@
-/*
- */
 package business.directory.domain.core;
 
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 /**
- * @author TGITS
+ * Created by Poulon on 31/12/2015.
  */
 @EqualsAndHashCode
 @ToString
-public class PhoneCoordinate extends AbstractCoordinate {
+public class MobileCoordinate extends AbstractCoordinate {
 
-    private final String pattern = "\\+\\d{11}|0\\d{9}";
+    private final String pattern = "\\+6\\d{10}|06\\d{8}";
 
-    public PhoneCoordinate() {
-        super();
+    public MobileCoordinate() {
     }
 
-    public PhoneCoordinate(String phoneNumber){
-        super(phoneNumber);
+    public MobileCoordinate(String mobileNumber) {
+        super(mobileNumber);
     }
 
     public CoordinateType type() {
