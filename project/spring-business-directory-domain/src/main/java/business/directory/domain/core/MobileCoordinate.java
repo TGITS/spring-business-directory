@@ -28,6 +28,6 @@ public class MobileCoordinate extends AbstractCoordinate {
     }
 
     protected String exceptionMessage() {
-        return getValue() + " is not a valid phone number";
+        return getValue() + " is not a valid mobile number";
     }
 }
