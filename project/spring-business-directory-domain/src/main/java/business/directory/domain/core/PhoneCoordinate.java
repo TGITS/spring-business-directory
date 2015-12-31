@@ -22,14 +22,17 @@ public class PhoneCoordinate extends AbstractCoordinate {
         super(phoneNumber);
     }
 
+    @Override
     public CoordinateType type() {
         return CoordinateType.PHONE;
     }
 
+    @Override
     protected String pattern() {
         return pattern;
     }
 
+    @Override
     protected String exceptionMessage() {
         return getValue() + " is not a valid phone number";
     }

@@ -19,14 +19,17 @@ public class MobileCoordinate extends AbstractCoordinate {
         super(mobileNumber);
     }
 
+    @Override
     public CoordinateType type() {
         return CoordinateType.MOBILE;
     }
 
+    @Override
     protected String pattern() {
         return pattern;
     }
 
+    @Override
     protected String exceptionMessage() {
         return getValue() + " is not a valid mobile number";
     }

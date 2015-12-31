@@ -19,14 +19,17 @@ public class EmailCoordinate extends AbstractCoordinate {
         super(email);
     }
 
+    @Override
     public CoordinateType type() {
         return CoordinateType.EMAIL;
     }
 
+    @Override
     protected String pattern() {
         return pattern;
     }
 
+    @Override
     protected String exceptionMessage() {
         return getValue() + " is not a valid email";
     }
