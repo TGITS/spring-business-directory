@@ -1,28 +1,31 @@
-**Sujet: Annuaire contacts**
+# Annuaire contacts
 
+## Cas d'utilisation
 * Ajout contact
 * Suppression contact
 * Modifier contact
 * Upload fichier de contact (CSV, XML)
 * Export Contact  (CSV -> dump, XML -> dump, HTML (XSS))
 
-**technologies BDD:** 
+## technologies BDD
 
 * Base H2
 * mapDB
 * HSQLdb
 
-**technologies WS:** 
+## technologies WS
 
 * SOAP
 * REST
 
-**Outil de développement :**
+## Outils de développement
 
 * ATOM
+* Intellij IDEA
+* Eclipse
+* Maven
 
-**Technologies  applicatif Web :**
+## Technologies application Web
 
-* J2EE
-* UNIT TEST
-* MAVEN 3
+* JEE
+* Spring MVC
